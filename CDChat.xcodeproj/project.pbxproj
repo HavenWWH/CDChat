@@ -1,0 +1,782 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50005F0B2230BAD800E88096 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50005F0A2230BAD800E88096 /* AppDelegate.m */; };
+		50005F0E2230BAD800E88096 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50005F0D2230BAD800E88096 /* ViewController.m */; };
+		50005F112230BAD800E88096 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50005F0F2230BAD800E88096 /* Main.storyboard */; };
+		50005F132230BAD900E88096 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50005F122230BAD900E88096 /* Assets.xcassets */; };
+		50005F162230BAD900E88096 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50005F142230BAD900E88096 /* LaunchScreen.storyboard */; };
+		50005F192230BAD900E88096 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50005F182230BAD900E88096 /* main.m */; };
+		50005F232230BAD900E88096 /* CDChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50005F222230BAD900E88096 /* CDChatTests.m */; };
+		50005F2E2230BAD900E88096 /* CDChatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50005F2D2230BAD900E88096 /* CDChatUITests.m */; };
+		50A4B3112230CB3D006FAA31 /* CDChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A4B3102230CB3D006FAA31 /* CDChatViewController.m */; };
+		50A4B3142230E858006FAA31 /* CDMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A4B3132230E858006FAA31 /* CDMessageCell.m */; };
+		50A4B3172230E8AB006FAA31 /* CDMessageContentButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A4B3162230E8AB006FAA31 /* CDMessageContentButton.m */; };
+		50A4B31A2230EE47006FAA31 /* CDMessageFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A4B3192230EE47006FAA31 /* CDMessageFrame.m */; };
+		50A4B31D2230EE64006FAA31 /* CDMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A4B31C2230EE64006FAA31 /* CDMessageModel.m */; };
+		50A4B32F223103AD006FAA31 /* CDChat.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 50A4B32E223103AD006FAA31 /* CDChat.bundle */; };
+		50A4B33222310530006FAA31 /* CDChatModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A4B33022310530006FAA31 /* CDChatModel.m */; };
+		50A4B33522312535006FAA31 /* CDImageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A4B33422312535006FAA31 /* CDImageTool.m */; };
+		50A4B33822312FF7006FAA31 /* CDAVAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A4B33722312FF7006FAA31 /* CDAVAudioPlayer.m */; };
+		50A4B342223240B9006FAA31 /* CDChatCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A4B33E223240B9006FAA31 /* CDChatCategory.m */; };
+		50A4B343223240B9006FAA31 /* UIView+chatExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A4B340223240B9006FAA31 /* UIView+chatExtension.m */; };
+		50A4B34622324140006FAA31 /* NSDate+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A4B34422324140006FAA31 /* NSDate+Utils.m */; };
+		50A4B34F22324D0A006FAA31 /* CDChatInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A4B34E22324D0A006FAA31 /* CDChatInputView.m */; };
+		D4D28B579C11B5F5CFD74AFF /* libPods-CDChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F5C55A5710D7045B53D9DC /* libPods-CDChat.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50005F1F2230BAD900E88096 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50005EFE2230BAD800E88096 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50005F052230BAD800E88096;
+			remoteInfo = CDChat;
+		};
+		50005F2A2230BAD900E88096 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50005EFE2230BAD800E88096 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50005F052230BAD800E88096;
+			remoteInfo = CDChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		254BBD99282DDE936AF51358 /* Pods-CDChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDChat.release.xcconfig"; path = "Target Support Files/Pods-CDChat/Pods-CDChat.release.xcconfig"; sourceTree = "<group>"; };
+		50005F062230BAD800E88096 /* CDChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50005F092230BAD800E88096 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		50005F0A2230BAD800E88096 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		50005F0C2230BAD800E88096 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		50005F0D2230BAD800E88096 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		50005F102230BAD800E88096 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		50005F122230BAD900E88096 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50005F152230BAD900E88096 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		50005F172230BAD900E88096 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50005F182230BAD900E88096 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		50005F1E2230BAD900E88096 /* CDChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CDChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50005F222230BAD900E88096 /* CDChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDChatTests.m; sourceTree = "<group>"; };
+		50005F242230BAD900E88096 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50005F292230BAD900E88096 /* CDChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CDChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50005F2D2230BAD900E88096 /* CDChatUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDChatUITests.m; sourceTree = "<group>"; };
+		50005F2F2230BAD900E88096 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50A4B30F2230CB3D006FAA31 /* CDChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDChatViewController.h; sourceTree = "<group>"; };
+		50A4B3102230CB3D006FAA31 /* CDChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDChatViewController.m; sourceTree = "<group>"; };
+		50A4B3122230E858006FAA31 /* CDMessageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDMessageCell.h; sourceTree = "<group>"; };
+		50A4B3132230E858006FAA31 /* CDMessageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDMessageCell.m; sourceTree = "<group>"; };
+		50A4B3152230E8AB006FAA31 /* CDMessageContentButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDMessageContentButton.h; sourceTree = "<group>"; };
+		50A4B3162230E8AB006FAA31 /* CDMessageContentButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDMessageContentButton.m; sourceTree = "<group>"; };
+		50A4B3182230EE47006FAA31 /* CDMessageFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDMessageFrame.h; sourceTree = "<group>"; };
+		50A4B3192230EE47006FAA31 /* CDMessageFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDMessageFrame.m; sourceTree = "<group>"; };
+		50A4B31B2230EE64006FAA31 /* CDMessageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDMessageModel.h; sourceTree = "<group>"; };
+		50A4B31C2230EE64006FAA31 /* CDMessageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDMessageModel.m; sourceTree = "<group>"; };
+		50A4B32E223103AD006FAA31 /* CDChat.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CDChat.bundle; sourceTree = "<group>"; };
+		50A4B33022310530006FAA31 /* CDChatModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDChatModel.m; sourceTree = "<group>"; };
+		50A4B33122310530006FAA31 /* CDChatModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDChatModel.h; sourceTree = "<group>"; };
+		50A4B33322312535006FAA31 /* CDImageTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDImageTool.h; sourceTree = "<group>"; };
+		50A4B33422312535006FAA31 /* CDImageTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDImageTool.m; sourceTree = "<group>"; };
+		50A4B33622312FF7006FAA31 /* CDAVAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDAVAudioPlayer.h; sourceTree = "<group>"; };
+		50A4B33722312FF7006FAA31 /* CDAVAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDAVAudioPlayer.m; sourceTree = "<group>"; };
+		50A4B3392232114E006FAA31 /* CDChatDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDChatDefine.h; sourceTree = "<group>"; };
+		50A4B33E223240B9006FAA31 /* CDChatCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDChatCategory.m; sourceTree = "<group>"; };
+		50A4B33F223240B9006FAA31 /* UIView+chatExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+chatExtension.h"; sourceTree = "<group>"; };
+		50A4B340223240B9006FAA31 /* UIView+chatExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+chatExtension.m"; sourceTree = "<group>"; };
+		50A4B341223240B9006FAA31 /* CDChatCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDChatCategory.h; sourceTree = "<group>"; };
+		50A4B34422324140006FAA31 /* NSDate+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utils.m"; sourceTree = "<group>"; };
+		50A4B34522324140006FAA31 /* NSDate+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utils.h"; sourceTree = "<group>"; };
+		50A4B34D22324D0A006FAA31 /* CDChatInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDChatInputView.h; sourceTree = "<group>"; };
+		50A4B34E22324D0A006FAA31 /* CDChatInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDChatInputView.m; sourceTree = "<group>"; };
+		CB43380398A549CABB8ECFB5 /* Pods-CDChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDChat.debug.xcconfig"; path = "Target Support Files/Pods-CDChat/Pods-CDChat.debug.xcconfig"; sourceTree = "<group>"; };
+		F1F5C55A5710D7045B53D9DC /* libPods-CDChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CDChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50005F032230BAD800E88096 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4D28B579C11B5F5CFD74AFF /* libPods-CDChat.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50005F1B2230BAD900E88096 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50005F262230BAD900E88096 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		126958E3BCDA354CC1F0D420 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB43380398A549CABB8ECFB5 /* Pods-CDChat.debug.xcconfig */,
+				254BBD99282DDE936AF51358 /* Pods-CDChat.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		50005EFD2230BAD800E88096 = {
+			isa = PBXGroup;
+			children = (
+				50005F082230BAD800E88096 /* CDChat */,
+				50005F212230BAD900E88096 /* CDChatTests */,
+				50005F2C2230BAD900E88096 /* CDChatUITests */,
+				50005F072230BAD800E88096 /* Products */,
+				126958E3BCDA354CC1F0D420 /* Pods */,
+				A6C2F86A50C83F5CA469E88B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		50005F072230BAD800E88096 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50005F062230BAD800E88096 /* CDChat.app */,
+				50005F1E2230BAD900E88096 /* CDChatTests.xctest */,
+				50005F292230BAD900E88096 /* CDChatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50005F082230BAD800E88096 /* CDChat */ = {
+			isa = PBXGroup;
+			children = (
+				50A4B3062230BBBB006FAA31 /* CDChatUI */,
+				50005F092230BAD800E88096 /* AppDelegate.h */,
+				50005F0A2230BAD800E88096 /* AppDelegate.m */,
+				50005F0C2230BAD800E88096 /* ViewController.h */,
+				50005F0D2230BAD800E88096 /* ViewController.m */,
+				50A4B33122310530006FAA31 /* CDChatModel.h */,
+				50A4B33022310530006FAA31 /* CDChatModel.m */,
+				50005F0F2230BAD800E88096 /* Main.storyboard */,
+				50005F122230BAD900E88096 /* Assets.xcassets */,
+				50005F142230BAD900E88096 /* LaunchScreen.storyboard */,
+				50005F172230BAD900E88096 /* Info.plist */,
+				50005F182230BAD900E88096 /* main.m */,
+			);
+			path = CDChat;
+			sourceTree = "<group>";
+		};
+		50005F212230BAD900E88096 /* CDChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				50005F222230BAD900E88096 /* CDChatTests.m */,
+				50005F242230BAD900E88096 /* Info.plist */,
+			);
+			path = CDChatTests;
+			sourceTree = "<group>";
+		};
+		50005F2C2230BAD900E88096 /* CDChatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				50005F2D2230BAD900E88096 /* CDChatUITests.m */,
+				50005F2F2230BAD900E88096 /* Info.plist */,
+			);
+			path = CDChatUITests;
+			sourceTree = "<group>";
+		};
+		50A4B3062230BBBB006FAA31 /* CDChatUI */ = {
+			isa = PBXGroup;
+			children = (
+				50A4B32E223103AD006FAA31 /* CDChat.bundle */,
+				50A4B30C2230BC32006FAA31 /* Model */,
+				50A4B30B2230BC32006FAA31 /* Utils */,
+				50A4B30E2230BC32006FAA31 /* View */,
+				50A4B30D2230BC32006FAA31 /* ViewController */,
+			);
+			path = CDChatUI;
+			sourceTree = "<group>";
+		};
+		50A4B30B2230BC32006FAA31 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				50A4B3392232114E006FAA31 /* CDChatDefine.h */,
+				50A4B33622312FF7006FAA31 /* CDAVAudioPlayer.h */,
+				50A4B33722312FF7006FAA31 /* CDAVAudioPlayer.m */,
+				50A4B33322312535006FAA31 /* CDImageTool.h */,
+				50A4B33422312535006FAA31 /* CDImageTool.m */,
+				50A4B33D223240B9006FAA31 /* Category */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		50A4B30C2230BC32006FAA31 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				50A4B3182230EE47006FAA31 /* CDMessageFrame.h */,
+				50A4B3192230EE47006FAA31 /* CDMessageFrame.m */,
+				50A4B31B2230EE64006FAA31 /* CDMessageModel.h */,
+				50A4B31C2230EE64006FAA31 /* CDMessageModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		50A4B30D2230BC32006FAA31 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				50A4B30F2230CB3D006FAA31 /* CDChatViewController.h */,
+				50A4B3102230CB3D006FAA31 /* CDChatViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		50A4B30E2230BC32006FAA31 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				50A4B3122230E858006FAA31 /* CDMessageCell.h */,
+				50A4B3132230E858006FAA31 /* CDMessageCell.m */,
+				50A4B3152230E8AB006FAA31 /* CDMessageContentButton.h */,
+				50A4B3162230E8AB006FAA31 /* CDMessageContentButton.m */,
+				50A4B34D22324D0A006FAA31 /* CDChatInputView.h */,
+				50A4B34E22324D0A006FAA31 /* CDChatInputView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		50A4B33D223240B9006FAA31 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				50A4B34522324140006FAA31 /* NSDate+Utils.h */,
+				50A4B34422324140006FAA31 /* NSDate+Utils.m */,
+				50A4B341223240B9006FAA31 /* CDChatCategory.h */,
+				50A4B33E223240B9006FAA31 /* CDChatCategory.m */,
+				50A4B33F223240B9006FAA31 /* UIView+chatExtension.h */,
+				50A4B340223240B9006FAA31 /* UIView+chatExtension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		A6C2F86A50C83F5CA469E88B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1F5C55A5710D7045B53D9DC /* libPods-CDChat.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50005F052230BAD800E88096 /* CDChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50005F322230BAD900E88096 /* Build configuration list for PBXNativeTarget "CDChat" */;
+			buildPhases = (
+				7056FC7F7D899B02C24DB26C /* [CP] Check Pods Manifest.lock */,
+				50005F022230BAD800E88096 /* Sources */,
+				50005F032230BAD800E88096 /* Frameworks */,
+				50005F042230BAD800E88096 /* Resources */,
+				2DE9420BBCA14D2BF12F7F90 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CDChat;
+			productName = CDChat;
+			productReference = 50005F062230BAD800E88096 /* CDChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		50005F1D2230BAD900E88096 /* CDChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50005F352230BAD900E88096 /* Build configuration list for PBXNativeTarget "CDChatTests" */;
+			buildPhases = (
+				50005F1A2230BAD900E88096 /* Sources */,
+				50005F1B2230BAD900E88096 /* Frameworks */,
+				50005F1C2230BAD900E88096 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50005F202230BAD900E88096 /* PBXTargetDependency */,
+			);
+			name = CDChatTests;
+			productName = CDChatTests;
+			productReference = 50005F1E2230BAD900E88096 /* CDChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		50005F282230BAD900E88096 /* CDChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50005F382230BAD900E88096 /* Build configuration list for PBXNativeTarget "CDChatUITests" */;
+			buildPhases = (
+				50005F252230BAD900E88096 /* Sources */,
+				50005F262230BAD900E88096 /* Frameworks */,
+				50005F272230BAD900E88096 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50005F2B2230BAD900E88096 /* PBXTargetDependency */,
+			);
+			name = CDChatUITests;
+			productName = CDChatUITests;
+			productReference = 50005F292230BAD900E88096 /* CDChatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50005EFE2230BAD800E88096 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "吴文海";
+				TargetAttributes = {
+					50005F052230BAD800E88096 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					50005F1D2230BAD900E88096 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 50005F052230BAD800E88096;
+					};
+					50005F282230BAD900E88096 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 50005F052230BAD800E88096;
+					};
+				};
+			};
+			buildConfigurationList = 50005F012230BAD800E88096 /* Build configuration list for PBXProject "CDChat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50005EFD2230BAD800E88096;
+			productRefGroup = 50005F072230BAD800E88096 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50005F052230BAD800E88096 /* CDChat */,
+				50005F1D2230BAD900E88096 /* CDChatTests */,
+				50005F282230BAD900E88096 /* CDChatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50005F042230BAD800E88096 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50A4B32F223103AD006FAA31 /* CDChat.bundle in Resources */,
+				50005F162230BAD900E88096 /* LaunchScreen.storyboard in Resources */,
+				50005F132230BAD900E88096 /* Assets.xcassets in Resources */,
+				50005F112230BAD800E88096 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50005F1C2230BAD900E88096 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50005F272230BAD900E88096 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2DE9420BBCA14D2BF12F7F90 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CDChat/Pods-CDChat-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CDChat/Pods-CDChat-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CDChat/Pods-CDChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7056FC7F7D899B02C24DB26C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CDChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50005F022230BAD800E88096 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50A4B31D2230EE64006FAA31 /* CDMessageModel.m in Sources */,
+				50A4B33522312535006FAA31 /* CDImageTool.m in Sources */,
+				50A4B3172230E8AB006FAA31 /* CDMessageContentButton.m in Sources */,
+				50A4B33822312FF7006FAA31 /* CDAVAudioPlayer.m in Sources */,
+				50A4B33222310530006FAA31 /* CDChatModel.m in Sources */,
+				50005F0E2230BAD800E88096 /* ViewController.m in Sources */,
+				50A4B342223240B9006FAA31 /* CDChatCategory.m in Sources */,
+				50A4B3142230E858006FAA31 /* CDMessageCell.m in Sources */,
+				50A4B34622324140006FAA31 /* NSDate+Utils.m in Sources */,
+				50005F192230BAD900E88096 /* main.m in Sources */,
+				50A4B34F22324D0A006FAA31 /* CDChatInputView.m in Sources */,
+				50A4B31A2230EE47006FAA31 /* CDMessageFrame.m in Sources */,
+				50A4B343223240B9006FAA31 /* UIView+chatExtension.m in Sources */,
+				50005F0B2230BAD800E88096 /* AppDelegate.m in Sources */,
+				50A4B3112230CB3D006FAA31 /* CDChatViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50005F1A2230BAD900E88096 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50005F232230BAD900E88096 /* CDChatTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50005F252230BAD900E88096 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50005F2E2230BAD900E88096 /* CDChatUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50005F202230BAD900E88096 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50005F052230BAD800E88096 /* CDChat */;
+			targetProxy = 50005F1F2230BAD900E88096 /* PBXContainerItemProxy */;
+		};
+		50005F2B2230BAD900E88096 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50005F052230BAD800E88096 /* CDChat */;
+			targetProxy = 50005F2A2230BAD900E88096 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		50005F0F2230BAD800E88096 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50005F102230BAD800E88096 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		50005F142230BAD900E88096 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50005F152230BAD900E88096 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		50005F302230BAD900E88096 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		50005F312230BAD900E88096 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50005F332230BAD900E88096 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB43380398A549CABB8ECFB5 /* Pods-CDChat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BG4PXE43BN;
+				INFOPLIST_FILE = CDChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.changDao.CDChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		50005F342230BAD900E88096 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 254BBD99282DDE936AF51358 /* Pods-CDChat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BG4PXE43BN;
+				INFOPLIST_FILE = CDChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.changDao.CDChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		50005F362230BAD900E88096 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84TRHJ859C;
+				INFOPLIST_FILE = CDChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.changDao.CDChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CDChat.app/CDChat";
+			};
+			name = Debug;
+		};
+		50005F372230BAD900E88096 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84TRHJ859C;
+				INFOPLIST_FILE = CDChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.changDao.CDChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CDChat.app/CDChat";
+			};
+			name = Release;
+		};
+		50005F392230BAD900E88096 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84TRHJ859C;
+				INFOPLIST_FILE = CDChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.changDao.CDChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CDChat;
+			};
+			name = Debug;
+		};
+		50005F3A2230BAD900E88096 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84TRHJ859C;
+				INFOPLIST_FILE = CDChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.changDao.CDChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CDChat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50005F012230BAD800E88096 /* Build configuration list for PBXProject "CDChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50005F302230BAD900E88096 /* Debug */,
+				50005F312230BAD900E88096 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50005F322230BAD900E88096 /* Build configuration list for PBXNativeTarget "CDChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50005F332230BAD900E88096 /* Debug */,
+				50005F342230BAD900E88096 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50005F352230BAD900E88096 /* Build configuration list for PBXNativeTarget "CDChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50005F362230BAD900E88096 /* Debug */,
+				50005F372230BAD900E88096 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50005F382230BAD900E88096 /* Build configuration list for PBXNativeTarget "CDChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50005F392230BAD900E88096 /* Debug */,
+				50005F3A2230BAD900E88096 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50005EFE2230BAD800E88096 /* Project object */;
+}
